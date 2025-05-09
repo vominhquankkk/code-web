@@ -19,7 +19,7 @@
 
 <body>
   <div class="h-25 d-flex align-items-center justify-content-between bg-primary text-light px-5">
-    <div class="fs-3 fw-bold">CHÀO MỪNG BẠN ĐẾN VỚI ĐỌC TRUYỆN ONLINE MỖI NGÀY</div>
+    <div class="fs-3 fw-bold">CHÀO MỪNG BẠN ĐẾN VỚI NƠI BÁN TRUYỆN NHỮNG CÂU TRUYỆN HAY NHẤT THẾ GIỚI</div>
     <div class="d-flex gap-2">
       <div id="userInfo" class="d-none dropdown d-flex align-items-center gap-2">
         <img id="userAvatar" src="" alt="Avatar" class="rounded-circle dropdown-toggle" data-bs-toggle="dropdown"
@@ -33,9 +33,14 @@
 
       <button id="loginButton" type="button" class="btn btn-light fw-bold w-20 text-primary"
         onclick="toggleLoginForm()"><i class="bi bi-person fw-bold"></i>Đăng Nhập</button>
-      <button class="btn btn-light">
-        <i class="bi bi-bookmark-check-fill fs-6 text-primary"></i>
+      <button class="btn btn-hiden btn-light fw-bold w-20 text-primary" onclick="ShowCart()">
+        <i class="bi bi-cart"></i>
       </button>
+      <script>
+        function ShowCart() {
+          window.location.href = 'showCart.html';
+        }
+      </script>
     </div>
   </div>
   <!-- form đăng nhập bị ẩn -->
@@ -126,87 +131,87 @@
       </form>
     </div>
   </div>
-  <!-- thanh navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <div class="navbar-nav d-flex justify-content-around w-100">
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Truyện Ngắn</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Tình yêu</a></li>
-            <li><a class="dropdown-item" href="#">Gia đình</a></li>
-            <li><a class="dropdown-item" href="#">Cuộc sống</a></li>
-            <li><a class="dropdown-item" href="#">Học đường</a></li>
-            <li><a class="dropdown-item" href="#">Tâm lý – Xã hội</a></li>
-            <li><a class="dropdown-item" href="#">Truyện ngắn hài hước</a></li>
-            <li><a class="dropdown-item" href="#">Truyện ngắn kinh dị</a></li>
-            <li><a class="dropdown-item" href="#">Truyện ngắn kỳ ảo</a></li>
-            <li><a class="dropdown-item" href="#">Truyện cổ điển – văn học Việt Nam</a></li>
-            <li><a class="dropdown-item" href="#">Truyện nước ngoài dịch</a></li>
-          </ul>
-        </div>
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Truyện Dài</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Truyện tình cảm dài kỳ</a></li>
-            <li><a class="dropdown-item" href="#">Truyện phiêu lưu - hành động</a></li>
-            <li><a class="dropdown-item" href="#">Truyện kiếm hiệp</a></li>
-            <li><a class="dropdown-item" href="#">Truyện huyền bí - kỳ ảo</a></li>
-            <li><a class="dropdown-item" href="#">Truyện khoa học viễn tưởng </a></li>
-            <li><a class="dropdown-item" href="#">Truyện cổ điển nổi tiếng</a></li>
-            <li><a class="dropdown-item" href="#">Truyện dài thiếu nhi</a></li>
-            <li><a class="dropdown-item" href="#">Truyện tâm lý xã hội</a></li>
-            <li><a class="dropdown-item" href="#">Truyện chiến tranh - cách mạng</a></li>
-          </ul>
-        </div>
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Truyện Cười</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Truyện cười dân gian Việt Nam</a></li>
-            <li><a class="dropdown-item" href="#">Truyện cười học đường</a></li>
-            <li><a class="dropdown-item" href="#">Truyện cười gia đình</a></li>
-            <li><a class="dropdown-item" href="#">Truyện cười công sở</a></li>
-            <li><a class="dropdown-item" href="#">Truyện cười tình yêu</a></li>
-            <li><a class="dropdown-item" href="#">Truyện cười ngắn (1-3 dòng)</a></li>
-            <li><a class="dropdown-item" href="#">Truyện cười nghề nghiệp (bác sĩ, luật sư, kỹ sư...)</a></li>
-            <li><a class="dropdown-item" href="#">Truyện cười thiếu nhi</a></li>
-          </ul>
-        </div>
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Truyện Cổ Tích</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Tấm Cám</a></li>
-            <li><a class="dropdown-item" href="#">Thạch Sanh</a></li>
-            <li><a class="dropdown-item" href="#">Cây tre trăm đốt</a></li>
-            <li><a class="dropdown-item" href="#">Sọ Dừa</a></li>
-            <li><a class="dropdown-item" href="#">Chử Đồng Tử</a></li>
-            <li><a class="dropdown-item" href="#">Cây khế</a></li>
-            <li><a class="dropdown-item" href="#">Sự tích trầu cau</a></li>
-            <li><a class="dropdown-item" href="#">Sự tích bánh chưng, bánh giầy</a></li>
-            <li><a class="dropdown-item" href="#">Con rồng cháu tiên</a></li>
-          </ul>
-        </div>
-        <div class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Truyện Lịch Sử</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Lịch sử thời phong kiến</a></li>
-            <li><a class="dropdown-item" href="#">Lịch sử chống Pháp</a></li>
-            <li><a class="dropdown-item" href="#">Lịch sử chống Nhật</a></li>
-            <li><a class="dropdown-item" href="#">Lịch sử chống Pháp lần 2</a></li>
-            <li><a class="dropdown-item" href="#">Lịch sử chống Mỹ</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
   <div class="container mt-4">
     <h1 class="text-center mb-4">Danh sách truyện</h1>
     <div class="mb-4">
-      <input type="text" id="search" class="form-control" placeholder="Tìm kiếm truyện...">
+      <div class="input-group">
+        <input type="text" id="search" class="form-control" placeholder="Tìm kiếm truyện..." oninput="filterBooks()">
+        <select id="categoryFilter" class="form-select category-select" onchange="filterBooks()">
+          <option value="">Tất cả thể loại</option>
+          <option value="Tình yêu">Tình yêu</option>
+          <option value="Gia đình">Gia đình</option>
+          <option value="Cuộc sống">Cuộc sống</option>
+          <option value="Học đường">Học đường</option>
+          <option value="Tâm lý – Xã hội">Tâm lý – Xã hội</option>
+          <option value="Truyện ngắn hài hước">Truyện ngắn hài hước</option>
+          <option value="Truyện ngắn kinh dị">Truyện ngắn kinh dị</option>
+          <option value="Truyện ngắn kỳ ảo">Truyện ngắn kỳ ảo</option>
+          <option value="Truyện cổ điển – văn học Việt Nam">Truyện cổ điển – văn học Việt Nam</option>
+          <option value="Truyện nước ngoài dịch">Truyện nước ngoài dịch</option>
+          <option value="Truyện tình cảm dài kỳ">Truyện tình cảm dài kỳ</option>
+          <option value="Truyện phiêu lưu - hành động">Truyện phiêu lưu - hành động</option>
+          <option value="Truyện kiếm hiệp">Truyện kiếm hiệp</option>
+          <option value="Truyện huyền bí - kỳ ảo">Truyện huyền bí - kỳ ảo</option>
+          <option value="Truyện khoa học viễn tưởng">Truyện khoa học viễn tưởng</option>
+          <option value="Truyện cổ điển nổi tiếng">Truyện cổ điển nổi tiếng</option>
+          <option value="Truyện dài thiếu nhi">Truyện dài thiếu nhi</option>
+          <option value="Truyện tâm lý xã hội">Truyện tâm lý xã hội</option>
+          <option value="Truyện chiến tranh - cách mạng">Truyện chiến tranh - cách mạng</option>
+          <option value="Truyện cười dân gian Việt Nam">Truyện cười dân gian Việt Nam</option>
+          <option value="Truyện cười học đường">Truyện cười học đường</option>
+          <option value="Truyện cười gia đình">Truyện cười gia đình</option>
+          <option value="Truyện cười công sở">Truyện cười công sở</option>
+          <option value="Truyện cười tình yêu">Truyện cười tình yêu</option>
+          <option value="Truyện cười ngắn (1-3 dòng)">Truyện cười ngắn (1-3 dòng)</option>
+          <option value="Truyện cười nghề nghiệp (bác sĩ, luật sư, kỹ sư...)">Truyện cười nghề nghiệp (bác sĩ, luật sư, kỹ sư...)</option>
+          <option value="Truyện cười thiếu nhi">Truyện cười thiếu nhi</option>
+          <option value="Tấm Cám">Tấm Cám</option>
+          <option value="Thạch Sanh">Thạch Sanh</option>
+          <option value="Cây tre trăm đốt">Cây tre trăm đốt</option>
+          <option value="Sọ Dừa">Sọ Dừa</option>
+          <option value="Chử Đồng Tử">Chử Đồng Tử</option>
+          <option value="Cây khế">Cây khế</option>
+          <option value="Sự tích trầu cau">Sự tích trầu cau</option>
+          <option value="Sự tích bánh chưng, bánh giầy">Sự tích bánh chưng, bánh giầy</option>
+          <option value="Con rồng cháu tiên">Con rồng cháu tiên</option>
+          <option value="Lịch sử thời phong kiến">Lịch sử thời phong kiến</option>
+          <option value="Lịch sử chống Pháp">Lịch sử chống Pháp</option>
+          <option value="Lịch sử chống Nhật">Lịch sử chống Nhật</option>
+          <option value="Lịch sử chống Pháp lần 2">Lịch sử chống Pháp lần 2</option>
+          <option value="Kỹ năng sống">Kỹ năng sống</option>
+        </select>
+      </div>
     </div>
+
+    <script>
+      function filterBooks() {
+        const searchInput = document.getElementById('search').value.toLowerCase();
+        const categoryFilter = document.getElementById('categoryFilter').value;
+        const bookList = document.getElementById('bookList');
+        const books = Array.from(bookList.children);
+
+        books.forEach(book => {
+          const title = book.querySelector('.card-title').textContent.toLowerCase();
+          const category = book.querySelector('.card-text').textContent;
+
+          const matchesSearch = title.includes(searchInput);
+          const matchesCategory = !categoryFilter || category.includes(categoryFilter);
+
+          if (matchesSearch && matchesCategory) {
+            book.style.display = '';
+          } else {
+            book.style.display = 'none';
+          }
+        });
+      }
+    </script>
   <main>
     <h4 class="px-2 mt-2" style="font-family: 'Segoe UI';">TRUYỆN HOT HIT</h4>
     <style>
+      #categoryFilter {
+        width: 200px;
+        position: absolute;
+      }
       .img {
         width: 100%;
         height: 350px;
@@ -232,6 +237,57 @@
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   }
+
+  .search-bar {
+    display: flex;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .category-select {
+    width: 100px;
+    background-color: #e6e6e6;
+    border: none;
+    border-right: 1px solid #ccc;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .search-input {
+    flex: 1;
+    border: none;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+
+  .search-input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .search-btn {
+    background-color: #febd69;
+    border: none;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #111;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-btn:hover {
+    background-color: #f3a847;
+  }
+
+  .form-select:focus {
+    box-shadow: none;
+  }
+
     </style>
     
     <div class="container">
@@ -251,13 +307,12 @@
                 bookCard.innerHTML = `
                   <div class="card h-100">
                   <img src="${book.image}" class="card-img-top img" alt="${book.title}">
-                  <button class="btn btn-hiden  btn-secondary">Thêm Vào Giỏ</button>
+                  <button class="btn btn-hiden  btn-secondary"onclick="ShowDetails('${book.id}')">Xem Chi Tiết </button>
                   <div class="card-body">
                     <h5 class="card-title">${book.title}</h5>
-                    <p class="card-text ">Thể loại: ${book.category}</p>
+                    <p class="card-text "><strong>Thể loại:</strong> ${book.category}</p>
                     <p class="card-text"><strong>Giá:</strong> ${book.price} VNĐ</p>
-                    <butnon class="btn btn-hiden btn-primary">Xem Chi Tiết</button>
-                    
+                    <button class="btn btn-hiden btn-primary"onclick="AddToCart('${book.id}')">Thêm Vào Giỏ </button>
                   </div>
                   </div>
                 `;
@@ -270,6 +325,29 @@
 
               document.addEventListener('DOMContentLoaded', fetchBooks);
             </script>
+            <script>
+              function ShowDetails(id) {
+                window.location.href = 'showDetails.html?id=' + id;
+              }
+              function AddToCart(bookID,quantity=1) {
+                const cartItem = {
+                  bookID: bookID,
+                  quantity: quantity
+                };
+                fetch('https://6819bb531ac11556350604df.mockapi.io/cart', {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify(cartItem)
+                })
+                .then(res => res.json())
+                .then(data => {
+                  alert("Đã thêm vào giỏ hàng!");
+                })
+                .catch(err => console.error("Lỗi khi thêm vào giỏ:", err));
+              }
+              </script>
   </main>
 
   <footer>

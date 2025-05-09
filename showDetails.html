@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chi Tiết Sản Phẩm</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .img-detail { width:100%; max-width:400px; height:400px; object-fit:cover; }
+  </style>
+</head>
+<body class="p-4">
+  <a href="trangchu (1).html" class="btn btn-light mb-3">&larr; Quay về</a>
+  <div id="detailCard" class="card mx-auto" style="max-width:800px;"></div>
+
+  <script>
+    async function loadDetail() {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+      if (!id) return;
+      const res = await fetch('https://6819bb531ac11556350604df.mockapi.io/products/' + id);
+      const book = await res.json();
+      document.getElementById('detailCard').innerHTML = `
+        <div class="row g-0">
+          <div class="col-md-5 text-center p-3">
+            
+            <img src="${book.image}" class="img-detail rounded" alt="${book.title}">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h2 class="card-title">${book.title}</h2>
+              <p class="card-text"><strong>Thể loại:</strong> ${book.category}</p>
+              <p class="card-text">${book.description}</p>
+              <p class="card-text"><strong>Giá:</strong> ${book.price} VNĐ</p>  
+              <p class="card-text"><strong>Số lượng:</strong> ${book.quantity}</p>
+              <button class="btn btn-hiden btn-primary" onclick="AddToCart()">Thêm Vào Giỏ</button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    document.addEventListener('DOMContentLoaded', loadDetail);
+  </script>
+</body>
+</html>
